@@ -52,6 +52,16 @@ const apps: DashboardApp[] = [
     github: 'https://github.com/ptec07/agent-control-messenger',
   },
   {
+    name: 'Hermes Dashboard',
+    description: '로컬 Hermes 상태·세션·Cron·스킬 사용량을 한눈에 보는 운영 대시보드',
+    category: '에이전트',
+    status: '운영 중',
+    frontend: 'https://my-hermes-dashboard.vercel.app/',
+    backend: 'https://my-hermes-dashboard.vercel.app/api/dashboard',
+    github: 'https://github.com/ptec07/hermes-dashboard',
+    note: 'Vercel API가 로컬 Hermes backend live proxy 후 snapshot fallback',
+  },
+  {
     name: 'RealRent',
     description: '서울·수도권 전월세 실거래가 검색·비교 MVP',
     category: '부동산',
