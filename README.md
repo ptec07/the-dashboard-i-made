@@ -2,6 +2,10 @@
 
 Hermes로 만든 웹앱들의 프론트, 백엔드, GitHub URL을 한눈에 조회하는 포트폴리오 대시보드입니다.
 
+## 배포 URL
+
+- Production: https://the-dashboard-i-made.vercel.app
+
 ## 포함 항목
 
 - Bus Realtime Webapp
