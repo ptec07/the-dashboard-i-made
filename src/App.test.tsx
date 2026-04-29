@@ -14,6 +14,7 @@ describe('The dashboard I made', () => {
     expect(screen.getAllByText('12').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText(/총 웹앱/i)).toBeInTheDocument()
     expect(screen.getByRole('searchbox', { name: /웹앱 검색/i })).toBeInTheDocument()
+    expect(screen.queryByLabelText(/주요 웹앱 카드/i)).not.toBeInTheDocument()
   })
 
   it('shows every app with frontend, backend, and GitHub links where available', () => {

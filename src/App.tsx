@@ -188,23 +188,6 @@ function App() {
         <p>깔끔한 읽기 전용 인벤토리 · 최근 확인 기준</p>
       </section>
 
-      <section className="card-grid" aria-label="주요 웹앱 카드">
-        {apps.slice(0, 4).map((app) => (
-          <article className="app-card" key={app.name}>
-            <div className="card-topline">
-              <span className="category">{app.category}</span>
-              <span className={`status status-${app.status.replaceAll(' ', '-')}`}>{app.status}</span>
-            </div>
-            <h2>{app.name}</h2>
-            <p>{app.description}</p>
-            <div className="card-links">
-              <LinkOrText value={app.frontend} label={`${app.name} 프론트`} />
-              <LinkOrText value={app.github} label={`${app.name} GitHub`} />
-            </div>
-          </article>
-        ))}
-      </section>
-
       <section className="table-section">
         <div className="section-heading">
           <p className="eyebrow">URL Inventory</p>
