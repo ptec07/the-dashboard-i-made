@@ -99,6 +99,16 @@ const apps: DashboardApp[] = [
     note: '정적 SPA · TypeScript 공식/한국어 문서 기반',
   },
   {
+    name: 'Zig Learning Lab',
+    description: 'Zig 공식 문서 흐름을 따라 단계별 학습·코드 테스트·Exam을 제공하는 반응형 학습 앱',
+    category: '학습',
+    status: '운영 중',
+    frontend: 'https://zig-learning-lab.vercel.app/',
+    backend: 'https://ziglang.org/documentation/master/',
+    github: 'https://github.com/ptec07/zig-learning-lab',
+    note: '정적 SPA · Zig 공식 문서 기반',
+  },
+  {
     name: 'Markdown Blog Vercel',
     description: 'Markdown 기반 Vercel/Next.js 블로그',
     category: '콘텐츠',
