@@ -11,7 +11,7 @@ describe('The dashboard I made', () => {
 
     expect(screen.getByRole('heading', { name: /The dashboard I made/i })).toBeInTheDocument()
     expect(screen.getByText(/Hermes로 만든 웹앱들을 한눈에 정리한 대시보드/i)).toBeInTheDocument()
-    expect(screen.getAllByText('11').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('12').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText(/총 웹앱/i)).toBeInTheDocument()
     expect(screen.getByRole('searchbox', { name: /웹앱 검색/i })).toBeInTheDocument()
   })
@@ -29,7 +29,10 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('row', { name: /Agent Control Messenger/i })).toHaveTextContent('agent-control-messenger-backend-git.onrender.com')
     expect(within(table).getByRole('row', { name: /RealRent/i })).toHaveTextContent('realrent-backend.onrender.com')
     expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('로컬')
-    expect(within(table).getByRole('row', { name: /TypeScript Quest/i })).toHaveTextContent('준비 중')
+    expect(within(table).getByRole('row', { name: /Python Quest/i })).toHaveTextContent('python-quest-taupe.vercel.app')
+    expect(within(table).getByRole('row', { name: /Python Quest/i })).toHaveTextContent('docs.python.org/ko/3')
+    expect(within(table).getByRole('row', { name: /TypeScript Quest/i })).toHaveTextContent('typescript-quest.vercel.app')
+    expect(within(table).getByRole('row', { name: /TypeScript Quest/i })).toHaveTextContent('typescript-kr.github.io')
 
     expect(within(table).getByRole('link', { name: /React Quest GitHub/i })).toHaveAttribute(
       'href',

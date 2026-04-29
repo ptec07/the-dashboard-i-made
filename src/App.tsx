@@ -79,13 +79,24 @@ const apps: DashboardApp[] = [
     github: 'https://github.com/ptec07/react-quest',
   },
   {
-    name: 'TypeScript Quest',
-    description: 'TypeScript 학습용 Vite/React 퀘스트 앱',
+    name: 'Python Quest',
+    description: 'Python 공식 튜토리얼 흐름을 따라가는 한국어 학습 퀘스트 앱',
     category: '학습',
-    status: '준비 중',
-    frontend: '준비 중',
-    backend: '정적 SPA',
+    status: '운영 중',
+    frontend: 'https://python-quest-taupe.vercel.app',
+    backend: 'https://docs.python.org/ko/3/',
+    github: 'https://github.com/ptec07/python-quest',
+    note: '정적 SPA · Python 공식 문서 기반',
+  },
+  {
+    name: 'TypeScript Quest',
+    description: 'TypeScript 공식 핸드북 흐름을 따라가는 한국어 학습 퀘스트 앱',
+    category: '학습',
+    status: '운영 중',
+    frontend: 'https://typescript-quest.vercel.app',
+    backend: 'https://typescript-kr.github.io/',
     github: 'https://github.com/ptec07/typescript-quest',
+    note: '정적 SPA · TypeScript 공식/한국어 문서 기반',
   },
   {
     name: 'Markdown Blog Vercel',
@@ -124,10 +135,10 @@ function LinkOrText({ value, label }: { value?: string; label: string }) {
   if (!value) return <span className="muted">없음</span>
   if (!value.startsWith('http')) return <span>{value}</span>
 
-  const host = new URL(value).host
+  const displayUrl = value.replace(/^https?:\/\//, '').replace(/\/$/, '')
   return (
     <a href={value} target="_blank" rel="noreferrer" aria-label={label}>
-      {host}
+      {displayUrl}
     </a>
   )
 }
