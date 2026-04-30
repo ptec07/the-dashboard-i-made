@@ -11,7 +11,7 @@ describe('The dashboard I made', () => {
 
     expect(screen.getByRole('heading', { name: /The dashboard I made/i })).toBeInTheDocument()
     expect(screen.getByText(/Hermes로 만든 웹앱들을 한눈에 정리한 대시보드/i)).toBeInTheDocument()
-    expect(screen.getAllByText('14').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('15').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText(/총 웹앱/i)).toBeInTheDocument()
     expect(screen.getByRole('searchbox', { name: /웹앱 검색/i })).toBeInTheDocument()
     expect(screen.queryByLabelText(/주요 웹앱 카드/i)).not.toBeInTheDocument()
@@ -40,6 +40,24 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('row', { name: /Zig Learning Lab/i })).toHaveTextContent('ziglang.org/documentation/master')
     expect(within(table).getByRole('row', { name: /Hermes Dashboard/i })).toHaveTextContent('my-hermes-dashboard.vercel.app')
     expect(within(table).getByRole('row', { name: /Hermes Dashboard/i })).toHaveTextContent('github.com/ptec07/hermes-dashboard')
+    expect(within(table).getByRole('row', { name: /법령나침반/i })).toHaveTextContent('beopryeong-nachimban.vercel.app')
+    expect(within(table).getByRole('row', { name: /법령나침반/i })).toHaveTextContent('beopryeong-nachimban-api.onrender.com')
+    expect(within(table).getByRole('row', { name: /법령나침반/i })).toHaveTextContent('github.com/ptec07/beopryeong-nachimban')
+
+    expect(within(table).getByRole('link', { name: /법령나침반 프론트/i })).toHaveAttribute(
+      'href',
+      'https://beopryeong-nachimban.vercel.app/',
+    )
+
+    expect(within(table).getByRole('link', { name: /법령나침반 백엔드/i })).toHaveAttribute(
+      'href',
+      'https://beopryeong-nachimban-api.onrender.com',
+    )
+
+    expect(within(table).getByRole('link', { name: /법령나침반 GitHub/i })).toHaveAttribute(
+      'href',
+      'https://github.com/ptec07/beopryeong-nachimban',
+    )
 
     expect(within(table).getByRole('link', { name: /Hermes Dashboard 프론트/i })).toHaveAttribute(
       'href',

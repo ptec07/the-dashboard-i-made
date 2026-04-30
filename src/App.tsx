@@ -62,6 +62,16 @@ const apps: DashboardApp[] = [
     note: 'Vercel API가 로컬 Hermes backend live proxy 후 snapshot fallback',
   },
   {
+    name: '법령나침반',
+    description: '자연어 질문으로 관련 법령·처분 근거·후속 확인사항을 찾아주는 법령 리서치 MVP',
+    category: '법률',
+    status: '운영 중',
+    frontend: 'https://beopryeong-nachimban.vercel.app/',
+    backend: 'https://beopryeong-nachimban-api.onrender.com',
+    github: 'https://github.com/ptec07/beopryeong-nachimban',
+    note: 'Vercel frontend + Render FastAPI backend · 후속질문 지원',
+  },
+  {
     name: 'RealRent',
     description: '서울·수도권 전월세 실거래가 검색·비교 MVP',
     category: '부동산',
