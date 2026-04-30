@@ -29,7 +29,9 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('row', { name: /오늘응급/i })).toHaveTextContent('oneul-emergency-api.onrender.com')
     expect(within(table).getByRole('row', { name: /Agent Control Messenger/i })).toHaveTextContent('agent-control-messenger-backend-git.onrender.com')
     expect(within(table).getByRole('row', { name: /RealRent/i })).toHaveTextContent('realrent-backend.onrender.com')
-    expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('로컬')
+    expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('commute-helper.vercel.app')
+    expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('commute-helper-backend.onrender.com')
+    expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('운영 중')
     expect(within(table).getByRole('row', { name: /Python Quest/i })).toHaveTextContent('python-quest-taupe.vercel.app')
     expect(within(table).getByRole('row', { name: /Python Quest/i })).toHaveTextContent('docs.python.org/ko/3')
     expect(within(table).getByRole('row', { name: /TypeScript Quest/i })).toHaveTextContent('typescript-quest.vercel.app')
@@ -47,6 +49,16 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('link', { name: /Zig Learning Lab 프론트/i })).toHaveAttribute(
       'href',
       'https://zig-learning-lab.vercel.app/',
+    )
+
+    expect(within(table).getByRole('link', { name: /Commute Helper 프론트/i })).toHaveAttribute(
+      'href',
+      'https://commute-helper.vercel.app',
+    )
+
+    expect(within(table).getByRole('link', { name: /Commute Helper 백엔드/i })).toHaveAttribute(
+      'href',
+      'https://commute-helper-backend.onrender.com',
     )
 
     expect(within(table).getByRole('link', { name: /React Quest GitHub/i })).toHaveAttribute(
