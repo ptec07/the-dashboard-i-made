@@ -72,6 +72,16 @@ const apps: DashboardApp[] = [
     note: 'Vercel frontend + Render FastAPI backend · 후속질문 지원',
   },
   {
+    name: 'SkyTrip',
+    description: 'Aviasales 항공권 검색과 도착지 날씨·환율을 함께 보는 여행 보조 MVP',
+    category: '여행',
+    status: '운영 중',
+    frontend: 'https://flight-booking-helper.vercel.app',
+    backend: 'https://flight-booking-helper-api.onrender.com',
+    github: 'https://github.com/ptec07/flight-booking-helper',
+    note: 'Vercel frontend + Render FastAPI backend · 공항 자동완성/Aviasales 연동',
+  },
+  {
     name: 'RealRent',
     description: '서울·수도권 전월세 실거래가 검색·비교 MVP',
     category: '부동산',
