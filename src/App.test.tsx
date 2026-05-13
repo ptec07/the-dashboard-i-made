@@ -26,7 +26,12 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('columnheader', { name: /GitHub/i })).toBeInTheDocument()
 
     expect(within(table).getByRole('row', { name: /주차될까/i })).toHaveTextContent('parking-availability-app.vercel.app')
+    expect(within(table).getByRole('row', { name: /오늘응급/i })).toHaveTextContent('oneul-emergency.vercel.app')
     expect(within(table).getByRole('row', { name: /오늘응급/i })).toHaveTextContent('oneul-emergency-api.onrender.com')
+    expect(within(table).getByRole('link', { name: /오늘응급 프론트/i })).toHaveAttribute(
+      'href',
+      'https://oneul-emergency.vercel.app',
+    )
     expect(within(table).getByRole('row', { name: /Agent Control Messenger/i })).toHaveTextContent('agent-control-messenger-backend-git.onrender.com')
     expect(within(table).getByRole('row', { name: /RealRent/i })).toHaveTextContent('realrent-backend.onrender.com')
     expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('commute-helper.vercel.app')

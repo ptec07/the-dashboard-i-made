@@ -38,7 +38,7 @@ const apps: DashboardApp[] = [
     description: '응급실·야간/주말 약국을 빠르게 찾는 생활 안전 PWA',
     category: '응급',
     status: '운영 중',
-    frontend: 'https://frontend-delta-coral-90.vercel.app',
+    frontend: 'https://oneul-emergency.vercel.app',
     backend: 'https://oneul-emergency-api.onrender.com/api/health',
     github: 'https://github.com/ptec07/oneul-emergency',
   },
