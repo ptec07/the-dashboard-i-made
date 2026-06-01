@@ -33,6 +33,7 @@ describe('The dashboard I made', () => {
       'https://oneul-emergency.vercel.app',
     )
     expect(within(table).getByRole('row', { name: /Agent Control Messenger/i })).toHaveTextContent('agent-control-messenger-backend-git.onrender.com')
+    expect(within(table).getByRole('row', { name: /RealRent/i })).toHaveTextContent('new-realrent.vercel.app')
     expect(within(table).getByRole('row', { name: /RealRent/i })).toHaveTextContent('realrent-backend.onrender.com')
     expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('commute-helper.vercel.app')
     expect(within(table).getByRole('row', { name: /Commute Helper/i })).toHaveTextContent('commute-helper-backend.onrender.com')
@@ -96,6 +97,11 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('link', { name: /Commute Helper 프론트/i })).toHaveAttribute(
       'href',
       'https://commute-helper.vercel.app',
+    )
+
+    expect(within(table).getByRole('link', { name: /RealRent 프론트/i })).toHaveAttribute(
+      'href',
+      'https://new-realrent.vercel.app/',
     )
 
     expect(within(table).getByRole('link', { name: /Commute Helper 백엔드/i })).toHaveAttribute(

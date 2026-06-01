@@ -8,7 +8,7 @@ const frontendTitleExpectations = [
   ['Hermes Dashboard', 'https://my-hermes-dashboard.vercel.app/', 'Hermes Dashboard'],
   ['법령나침반', 'https://beopryeong-nachimban.vercel.app/', '법령나침반'],
   ['SkyTrip', 'https://flight-booking-helper.vercel.app', 'SkyTrip'],
-  ['RealRent', 'https://realrent-hazel.vercel.app', '리얼랜트 RealRent'],
+  ['RealRent', 'https://new-realrent.vercel.app/', 'RealRent 최신 실거래가'],
   ['Commute Helper', 'https://commute-helper.vercel.app', '출근도우미'],
   ['React Quest', 'https://react-quest-gray.vercel.app', 'react-quest'],
   ['Python Quest', 'https://python-quest-taupe.vercel.app', 'Python Quest'],

@@ -86,7 +86,7 @@ const apps: DashboardApp[] = [
     description: '서울·수도권 전월세 실거래가 검색·비교 MVP',
     category: '부동산',
     status: '운영 중',
-    frontend: 'https://realrent-hazel.vercel.app',
+    frontend: 'https://new-realrent.vercel.app/',
     backend: 'https://realrent-backend.onrender.com/health',
     github: 'https://github.com/ptec07/realrent',
   },
