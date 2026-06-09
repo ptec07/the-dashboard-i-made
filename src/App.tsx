@@ -62,6 +62,16 @@ const apps: DashboardApp[] = [
     note: 'Vercel API가 로컬 Hermes backend live proxy 후 snapshot fallback',
   },
   {
+    name: 'Hermes Daily Dashboard',
+    description: 'Hermes 일일 작업 결과와 Ona·Cron 실행 현황을 정리해 보여주는 데일리 리포트 대시보드',
+    category: '에이전트',
+    status: '운영 중',
+    frontend: 'https://hermes-daily-dashboard.vercel.app',
+    backend: 'https://hermes-daily-dashboard.vercel.app/api/reports/latest',
+    github: 'https://github.com/ptec07/hermes-daily-dashboard',
+    note: 'Vercel snapshot API · 일일 리포트/작업 카드 표시',
+  },
+  {
     name: '법령나침반',
     description: '자연어 질문으로 관련 법령·처분 근거·후속 확인사항을 찾아주는 법령 리서치 MVP',
     category: '법률',
