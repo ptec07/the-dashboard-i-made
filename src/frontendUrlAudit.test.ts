@@ -7,6 +7,7 @@ const frontendTitleExpectations = [
   ['Agent Control Messenger', 'https://agent-control-messenger-frontend.vercel.app', 'Agent Control Messenger'],
   ['Hermes Dashboard', 'https://my-hermes-dashboard.vercel.app/', 'Hermes Dashboard'],
   ['Hermes Daily Dashboard', 'https://hermes-daily-dashboard.vercel.app', 'Hermes Daily Dashboard'],
+  ['Inbox Signal Lab', 'https://inbox-signal-lab.vercel.app', 'Inbox Signal Lab'],
   ['법령나침반', 'https://beopryeong-nachimban.vercel.app/', '법령나침반'],
   ['SkyTrip', 'https://flight-booking-helper.vercel.app', 'SkyTrip'],
   ['RealRent', 'https://new-realrent.vercel.app/', 'RealRent 최신 실거래가'],

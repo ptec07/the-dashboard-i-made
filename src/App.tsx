@@ -72,6 +72,16 @@ const apps: DashboardApp[] = [
     note: 'Vercel snapshot API · 일일 리포트/작업 카드 표시',
   },
   {
+    name: 'Inbox Signal Lab',
+    description: 'Obsidian Inbox에서 반복 관심사와 강한 신호를 찾아 다음 제품 아이디어를 제안하는 개인 R&D 레이더',
+    category: '에이전트',
+    status: '운영 중',
+    frontend: 'https://inbox-signal-lab.vercel.app',
+    backend: 'https://inbox-signal-lab.vercel.app/api/analysis',
+    github: 'https://github.com/ptec07/Inbox-Signal-Lab',
+    note: 'Vercel same-origin analysis API · Obsidian Inbox snapshot fallback',
+  },
+  {
     name: '법령나침반',
     description: '자연어 질문으로 관련 법령·처분 근거·후속 확인사항을 찾아주는 법령 리서치 MVP',
     category: '법률',

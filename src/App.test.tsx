@@ -11,7 +11,7 @@ describe('The dashboard I made', () => {
 
     expect(screen.getByRole('heading', { name: /The dashboard I made/i })).toBeInTheDocument()
     expect(screen.getByText(/Hermes로 만든 웹앱들을 한눈에 정리한 대시보드/i)).toBeInTheDocument()
-    expect(screen.getAllByText('17').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('18').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText(/총 웹앱/i)).toBeInTheDocument()
     expect(screen.getByRole('searchbox', { name: /웹앱 검색/i })).toBeInTheDocument()
     expect(screen.queryByLabelText(/주요 웹앱 카드/i)).not.toBeInTheDocument()
@@ -118,6 +118,21 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('link', { name: /Hermes Daily Dashboard GitHub/i })).toHaveAttribute(
       'href',
       'https://github.com/ptec07/hermes-daily-dashboard',
+    )
+    expect(within(table).getByRole('row', { name: /Inbox Signal Lab/i })).toHaveTextContent(
+      'inbox-signal-lab.vercel.app',
+    )
+    expect(within(table).getByRole('link', { name: /Inbox Signal Lab 프론트/i })).toHaveAttribute(
+      'href',
+      'https://inbox-signal-lab.vercel.app',
+    )
+    expect(within(table).getByRole('link', { name: /Inbox Signal Lab 백엔드/i })).toHaveAttribute(
+      'href',
+      'https://inbox-signal-lab.vercel.app/api/analysis',
+    )
+    expect(within(table).getByRole('link', { name: /Inbox Signal Lab GitHub/i })).toHaveAttribute(
+      'href',
+      'https://github.com/ptec07/Inbox-Signal-Lab',
     )
     expect(within(table).getByRole('link', { name: /React Quest GitHub/i })).toHaveAttribute(
       'href',
