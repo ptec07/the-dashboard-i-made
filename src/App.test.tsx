@@ -11,7 +11,7 @@ describe('The dashboard I made', () => {
 
     expect(screen.getByRole('heading', { name: /The dashboard I made/i })).toBeInTheDocument()
     expect(screen.getByText(/Hermes로 만든 웹앱들을 한눈에 정리한 대시보드/i)).toBeInTheDocument()
-    expect(screen.getAllByText('18').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('19').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText(/총 웹앱/i)).toBeInTheDocument()
     expect(screen.getByRole('searchbox', { name: /웹앱 검색/i })).toBeInTheDocument()
     expect(screen.queryByLabelText(/주요 웹앱 카드/i)).not.toBeInTheDocument()
@@ -137,6 +137,20 @@ describe('The dashboard I made', () => {
     expect(within(table).getByRole('link', { name: /React Quest GitHub/i })).toHaveAttribute(
       'href',
       'https://github.com/ptec07/react-quest',
+    )
+
+    const transformerLabRow = within(table).getByRole('row', { name: /Transformer Lab/i })
+    expect(transformerLabRow).toHaveTextContent('transformer-lab-kappa.vercel.app')
+    expect(transformerLabRow).toHaveTextContent('github.com/ptec07/Transformer-Lab')
+    expect(transformerLabRow).toHaveTextContent('운영 중')
+    expect(transformerLabRow).toHaveTextContent('정적 SPA')
+    expect(within(table).getByRole('link', { name: /Transformer Lab 프론트/i })).toHaveAttribute(
+      'href',
+      'https://transformer-lab-kappa.vercel.app/',
+    )
+    expect(within(table).getByRole('link', { name: /Transformer Lab GitHub/i })).toHaveAttribute(
+      'href',
+      'https://github.com/ptec07/Transformer-Lab',
     )
   })
 })

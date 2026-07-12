@@ -160,6 +160,16 @@ const apps: DashboardApp[] = [
     note: '정적 SPA · Zig 공식 문서 기반',
   },
   {
+    name: 'Transformer Lab',
+    description: '질문이 답변이 되는 Transformer의 7단계를 숫자·수식·애니메이션으로 배우는 시각화 웹앱',
+    category: '학습',
+    status: '운영 중',
+    frontend: 'https://transformer-lab-kappa.vercel.app/',
+    backend: '정적 SPA',
+    github: 'https://github.com/ptec07/Transformer-Lab',
+    note: '토큰화부터 답변 생성까지 7단계 인터랙티브 시각화',
+  },
+  {
     name: 'Markdown Blog Vercel',
     description: 'Markdown 기반 Vercel/Next.js 블로그',
     category: '콘텐츠',

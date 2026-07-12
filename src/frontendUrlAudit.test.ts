@@ -16,6 +16,7 @@ const frontendTitleExpectations = [
   ['Python Quest', 'https://python-quest-taupe.vercel.app', 'Python Quest'],
   ['TypeScript Quest', 'https://typescript-quest.vercel.app', 'TypeScript Quest'],
   ['Zig Learning Lab', 'https://zig-learning-lab.vercel.app/', 'Zig Learning Lab'],
+  ['Transformer Lab', 'https://transformer-lab-kappa.vercel.app/', 'Transformer Lab — 질문이 답변이 되는 순간'],
   ['Markdown Blog Vercel', 'https://markdown-blog-vercel.vercel.app', 'Markdown Blog Studio'],
   ['HTML Vercel Blog', 'https://html-vercel-blog.vercel.app', 'HTML Blog on Vercel'],
   ['Stock Window Compare', 'https://stock-nine-psi.vercel.app', 'Stock Window Compare'],
